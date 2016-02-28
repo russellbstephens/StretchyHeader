@@ -5,9 +5,13 @@ import UIKit
 
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
-    func colorForIndex(index: Int) -> UIColor {
+    // MARK: Private
+    
+    private func colorForIndex(index: Int) -> UIColor {
         return index % 2 == 0 ? UIColor.whiteColor(): UIColor.blueColor()
     }
+    
+    // MARK: CollectionView Stuff
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath)
