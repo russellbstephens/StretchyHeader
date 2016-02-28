@@ -18,7 +18,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         super.viewDidLoad()
         
         collectionView.registerNib(UINib(nibName: kImageHeaderNib, bundle: NSBundle(forClass: self.dynamicType)), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kImageHeaderViewIdentifier)
-        flowLayout.headerReferenceSize = CGSizeMake(0, 20);
+        flowLayout.headerReferenceSize = CGSizeMake(0, 20)
     }
     // MARK: Private
     
