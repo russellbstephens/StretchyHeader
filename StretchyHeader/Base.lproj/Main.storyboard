@@ -50,6 +50,10 @@
                             <constraint firstAttribute="trailing" secondItem="3XK-Gh-fuy" secondAttribute="trailing" id="SXh-OV-JOe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="3XK-Gh-fuy" id="1Xd-Cr-PbT"/>
+                        <outlet property="flowLayout" destination="erZ-Pm-Xqx" id="w4c-vf-K4i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
