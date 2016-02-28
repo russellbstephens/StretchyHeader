@@ -3,7 +3,7 @@
 
 import UIKit
 
-class StetchyFlowLayout: UICollectionViewFlowLayout {
+class StretchyFlowLayout: UICollectionViewFlowLayout {
     
     override func shouldInvalidateLayoutForBoundsChange(newBounds: CGRect) -> Bool {
         return true
