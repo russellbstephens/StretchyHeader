@@ -1,8 +1,3 @@
-//
-//  ViewController.swift
-//  StretchyHeader
-//
-//  Created by Russell Stephens on 2/28/16.
 //  Copyright © 2016 Russell Stephens. All rights reserved.
 //
 
