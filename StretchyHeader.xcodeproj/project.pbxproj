@@ -14,6 +14,7 @@
 		46EFC25A1C83856200ADAE7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46EFC2581C83856200ADAE7E /* LaunchScreen.storyboard */; };
 		46EFC2631C838BBE00ADAE7E /* ImageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EFC2621C838BBE00ADAE7E /* ImageHeader.swift */; };
 		46EFC2651C838BD400ADAE7E /* ImageHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46EFC2641C838BD400ADAE7E /* ImageHeader.xib */; };
+		46EFC2681C8390EA00ADAE7E /* StretchyFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EFC2671C8390EA00ADAE7E /* StretchyFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		46EFC25B1C83856200ADAE7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46EFC2621C838BBE00ADAE7E /* ImageHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHeader.swift; sourceTree = "<group>"; };
 		46EFC2641C838BD400ADAE7E /* ImageHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageHeader.xib; sourceTree = "<group>"; };
+		46EFC2671C8390EA00ADAE7E /* StretchyFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StretchyFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		46EFC24E1C83856200ADAE7E /* StretchyHeader */ = {
 			isa = PBXGroup;
 			children = (
+				46EFC2661C8390BF00ADAE7E /* Stretchy Layout */,
 				46EFC2611C838BAC00ADAE7E /* Header */,
 				46EFC24F1C83856200ADAE7E /* AppDelegate.swift */,
 				46EFC2511C83856200ADAE7E /* ViewController.swift */,
@@ -76,6 +79,14 @@
 				46EFC2641C838BD400ADAE7E /* ImageHeader.xib */,
 			);
 			name = Header;
+			sourceTree = "<group>";
+		};
+		46EFC2661C8390BF00ADAE7E /* Stretchy Layout */ = {
+			isa = PBXGroup;
+			children = (
+				46EFC2671C8390EA00ADAE7E /* StretchyFlowLayout.swift */,
+			);
+			name = "Stretchy Layout";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +165,7 @@
 				46EFC2521C83856200ADAE7E /* ViewController.swift in Sources */,
 				46EFC2501C83856200ADAE7E /* AppDelegate.swift in Sources */,
 				46EFC2631C838BBE00ADAE7E /* ImageHeader.swift in Sources */,
+				46EFC2681C8390EA00ADAE7E /* StretchyFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
