@@ -13,29 +13,20 @@ class StretchyFlowLayout: UICollectionViewFlowLayout {
         let collectionView = self.collectionView
         let insets = collectionView?.contentInset
         let offset = collectionView?.contentOffset
-        
-        guard let topInset = insets?.top else {
+        guard let topInset = insets?.top,
+              let yOffset = offset?.y,
+              let attributes = super.layoutAttributesForElementsInRect(rect) else {
             return nil
         }
         let minY = -topInset
-        
-        guard let yOffset = offset?.y else {
-            return nil
-        }
-        
-        guard let attributes = super.layoutAttributesForElementsInRect(rect) else {
-            return nil
-        }
-        
         if yOffset >= minY {
             return attributes
         }
-        
         let deltaY = fabs(yOffset - minY)
+        let headerSize = self.headerReferenceSize
         for each in attributes {
             let kind = each.representedElementKind
             if kind == UICollectionElementKindSectionHeader {
-                let headerSize = self.headerReferenceSize
                 var headerRect = each.frame
                 headerRect.size.height = max(minY, headerSize.height + deltaY)
                 headerRect.origin.y = headerRect.origin.y - deltaY
