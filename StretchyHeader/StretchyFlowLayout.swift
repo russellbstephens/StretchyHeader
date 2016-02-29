@@ -24,14 +24,12 @@ class StretchyFlowLayout: UICollectionViewFlowLayout {
         }
         let deltaY = fabs(yOffset - minY)
         let headerSize = self.headerReferenceSize
-        for each in attributes {
-            let kind = each.representedElementKind
-            if kind == UICollectionElementKindSectionHeader {
-                var headerRect = each.frame
-                headerRect.size.height = max(minY, headerSize.height + deltaY)
-                headerRect.origin.y = headerRect.origin.y - deltaY
-                each.frame = headerRect
-            }
+        let sectionHeaderAttributes = attributes.filter{ $0.representedElementKind == UICollectionElementKindSectionHeader }
+        for header in sectionHeaderAttributes {
+            var headerRect = header.frame
+            headerRect.size.height = max(minY, headerSize.height + deltaY)
+            headerRect.origin.y = headerRect.origin.y - deltaY
+            header.frame = headerRect
         }
         return attributes
     }
